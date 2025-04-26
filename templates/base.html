@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    {% if user.is_authenticated %}
+    <span>Hello, {{ user.username }}!</span>
+    <a href="{% url 'logout' %}">Logout</a>
+    {# Add other authenticated user links here, like profile or password change #}
+    {# <a href="{% url 'password_change' %}">Change Password</a> #}
+    {% else %}
+    <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+</body>
+
+</html>

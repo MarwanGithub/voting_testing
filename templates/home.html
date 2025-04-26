@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %} {# Load static files tag (for CSS) #}
+
+{% block title %}Candidates - Voting System{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Meet the Candidates</h1>
+    <p>Review the candidates below before casting your vote.</p>
+
+    <hr>
+
+    <section class="candidate-list">
+
+        <article class="candidate-card">
+            <img src="{% static 'images/placeholder.png' %}" alt="Candidate Alice Photo" class="candidate-photo"> {# Example using static for image #}
+            <div class="candidate-info">
+                <h2>Alice Appleton</h2>
+                <h3>Running for President</h3>
+                <p>Alice believes in innovation and progress. Her main goals include improving infrastructure and investing in renewable energy. She has 10 years of experience in city council.</p>
+                <ul>
+                    <li>Focus on Technology</li>
+                    <li>Environmental Advocate</li>
+                    <li>Experienced Leader</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="candidate-card">
+            <img src="{% static 'images/placeholder.png' %}" alt="Candidate Bob Banner Photo" class="candidate-photo">
+            <div class="candidate-info">
+                <h2>Bob Banner</h2>
+                <h3>Running for President</h3>
+                <p>Bob is dedicated to community building and social programs. He aims to enhance public services and ensure equal opportunities for everyone. He is a former teacher and community organizer.</p>
+                 <ul>
+                    <li>Community Focused</li>
+                    <li>Supports Education</li>
+                    <li>Advocates for Social Justice</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="candidate-card">
+             <img src="{% static 'images/placeholder.png' %}" alt="Candidate Charlie Chapter Photo" class="candidate-photo">
+            <div class="candidate-info">
+                <h2>Charlie Chapter</h2>
+                <h3>Running for Vice President</h3>
+                <p>Charlie emphasizes fiscal responsibility and efficient governance. His priorities are reducing waste, lowering taxes, and promoting small businesses.</p>
+                 <ul>
+                    <li>Fiscal Conservative</li>
+                    <li>Supports Small Business</li>
+                    <li>Focus on Efficiency</li>
+                </ul>
+            </div>
+        </article>
+
+    </section> {# End candidate-list #}
+
+</div> {# End container #}
+{% endblock content %}

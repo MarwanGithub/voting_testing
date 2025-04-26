@@ -1,0 +1,97 @@
+/* static/css/style.css */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0056b3; /* Blue color for names */
+    margin-top: 0;
+}
+
+h3 {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.candidate-list {
+    margin-top: 30px;
+}
+
+.candidate-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items at the start */
+    gap: 20px; /* Space between image and info */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.candidate-photo {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Scale image nicely */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #ccc;
+}
+
+.candidate-info {
+    flex: 1; /* Allow info section to take remaining space */
+}
+
+.candidate-info ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* Basic styles for nav inherited from base - adjust as needed */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; /* Example alignment */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav span {
+    margin: 0 15px;
+}
